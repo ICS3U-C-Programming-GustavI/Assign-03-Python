@@ -5,7 +5,10 @@
 # then tells them how many days are in that month.
 # If the month is February, it checks for a leap year and adjusts the days.
 
-from month_days import month_days, valid_months  # Import month info from external file
+from month_days import ( # Import month info from external file
+    month_days, 
+    valid_months,
+  )  
 
 
 def main():
