@@ -13,8 +13,8 @@ month_days = {
     "September": 30,
     "October": 31,
     "November": 30,
-    "December": 31,
+    "December": 31
 }
 
 # List of valid months (used for checking valid input)
-valid_months = list(month_days.keys())
+valid_months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]

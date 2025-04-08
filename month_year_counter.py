@@ -5,14 +5,11 @@
 # then tells them how many days are in that month.
 # If the month is February, it checks for a leap year and adjusts the days.
 
-from month_days import month_days  # Import month info from external file
-from month_days import valid_months
+from month_days import month_days, valid_months  # Import month info from external file
 
 def main():
-    print("This program tells you how many days are in a month and checks the year.")
-    print(
-        "Note: Please enter the month with the first letter capitalized and do not add a space after your month (e.g., February).\n"
-    )
+    print("This program tells you how many days are in a month.")
+    print("Note: Please enter the month with the first letter capitalized (e.g., February).\n")
 
     # Ask the user for the month
     user_month = input("Enter the name of a month: ")
@@ -37,14 +34,10 @@ def main():
         if (user_year % 4 == 0 and user_year % 100 != 0) or (user_year % 400 == 0):
             print(f"There are 29 days in {user_month} of {user_year} (leap year).")
         else:
-            print(
-                f"There are 28 days in {user_month} of {user_year} (not a leap year)."
-            )
+            print(f"There are 28 days in {user_month} of {user_year} (not a leap year).")
     else:
         # For all other months, use the dictionary value directly
-        print(
-            f"There are {month_days[user_month]} days in {user_month} of {user_year}."
-        )
+        print(f"There are {month_days[user_month]} days in {user_month} of {user_year}.")
 
 # Only run if this file is executed directly
 if __name__ == "__main__":
